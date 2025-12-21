@@ -1,0 +1,101 @@
+.pageAlign{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:120px;
+    height: 1000px;
+    margin-top:1px;
+    width:1750px;
+
+}
+.login{
+    height:625px;
+    width:525px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top:110px;
+}
+.create{
+    height:625px;
+    width:525px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top:110px;
+
+}
+.login h2{
+    font-size:50px;
+    font-weight:normal;
+    margin-bottom:50px;
+}
+.login p{
+    text-align: right;
+    width: 75%;
+    margin-bottom:30px;
+
+}
+.create h2{
+    font-size:50px;
+    font-weight:normal;
+    margin-bottom:50px;
+}
+.formControl{
+    height:55px;
+    width:80%;
+    border:none;
+    font-size:20px;
+    font-family: "Inria Serif", serif;
+    font-style: normal;
+}
+.formControl::placeholder {
+    padding-left:15px;
+    font-size:20px;
+    font-family: "Inria Serif", serif;
+  font-style: normal;
+  opacity:0.5;
+}
+.loginButton{
+    width:440px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:55px;
+    border:none;
+    font-size:20px;
+    margin-top:30px;
+    border:solid;
+    border-color:grey;
+    border-width:1px;
+    border-radius:4px;
+    font-size:30px;
+    background-color:white;
+    font-family: "Inria Serif", serif;
+  font-style: normal;
+}
+.formCheck{
+    padding-top:20px;
+}
+.formCheck button{
+    margin-top:70px;
+}
+.login button{
+    margin-top:45px;
+}
+
+:global(.dark) .login,
+:global(.dark) .create {
+  background-color: #CDCDCD;
+}
+
+:global(.light) .login,
+:global(.light) .create {
+  background-color: #F3FBE6;
+}
