@@ -1,6 +1,8 @@
 import React from 'react';
 import {useState} from 'react';
 import styles from '../styles/AddBook.module.css';
+import { useTheme } from '../context/ThemeContext';
+
 
 function AddBook() {
   const [books, setBooks] = useState([]);
@@ -23,9 +25,32 @@ function AddBook() {
   }
 }; 
 
+const { theme } = useTheme();
+
+  const formStyle = {
+        backgroundColor: theme === "light" ? "#F3FBE6" : "#CDCDCD",
+        color: theme === "light" ? "black" : "#000000ff"
+      };
+      
+
+    const listStyle = {
+        backgroundColor: theme === "light" ? "#ffffffff" : "#CDCDCD",
+        color: theme === "light" ? "black" : "black"
+      };
+
+      const pageStyle = {
+        backgroundColor: theme === "light" ? "#E6ECFB" : "#18235D",
+        color: theme === "light" ? "black" : "black"
+      };
+
+  
+
+
 return (
-    <div className={styles.addBookPage}>
-      <div className={styles.bookList}>
+
+
+    <div className={styles.addBookPage} style={pageStyle}>
+      <div className={styles.bookList} style={listStyle}>
         <h2>Current Books In Library</h2>
         {books.length === 0 ? (
           <p>No books added yet.</p>
@@ -40,7 +65,7 @@ return (
         )}
       </div>
 
-      <div className={styles.addBookForm}>
+      <div className={styles.addBookForm} style={formStyle}>
         <h2>Add Book to List</h2>
         <form onSubmit={handleSubmit}>
           <label>

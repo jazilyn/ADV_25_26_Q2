@@ -5,24 +5,37 @@ import styles from '../styles/Settings.module.css';
 import darks from '../assets/darks.png';
 
 function Settings() {
+
+  const { theme } = useTheme();
+
+  const layoutStyle = {
+        backgroundColor: theme === "light" ? "#E6ECFB" : "#18235D",
+        color: theme === "light" ? "black" : "#ffffffff"
+      };
+
+    const layoutsStyle = {
+        backgroundColor: theme === "light" ? "#F3FBE6" : "#CDCDCD",
+        color: theme === "light" ? "black" : "black"
+      };
+
   const { toggleTheme } = useTheme();
 
   return (
-    <div className={styles.layout}>
+    <div className={styles.layout} >
 
      
-      <div className={styles.sidebar}>
+      <div className={styles.sidebar} style={layoutsStyle}>
         <h1>Site Settings</h1>
       </div>
 
 
-      <div className={styles.appearanceContainer}>
+      <div className={styles.appearanceContainer} style={layoutStyle}>
        
 
-        <div className={styles.themePreviewContainer}>
+        <div className={styles.themePreviewContainer} style={layoutStyle}>
 
-      
-          <div className={styles.themePreview}>
+
+          <div className={styles.themePreview} style={layoutStyle}>
             <h3>Light Theme</h3>
 
             <img
@@ -37,7 +50,7 @@ function Settings() {
             </button>
           </div>
 
-          <div className={styles.themePreview}>
+          <div className={styles.themePreview} style={layoutStyle}>
             <h3>Dark Theme</h3>
 
             <img
