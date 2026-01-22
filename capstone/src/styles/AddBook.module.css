@@ -1,0 +1,77 @@
+.addBookPage {
+  display: flex;
+  gap: 30%;
+  padding: 32px;
+  font-family: 'Inria Serif', serif;
+  width:1750px;
+  height:400px;
+  background-color:#E6ECFB;
+  height:900px;
+}
+
+.bookList {
+  flex: 1;
+  padding-left:20px;
+  width: 700px;
+  background-color:white;
+  height:900px;
+  
+}
+
+.addBookForm {
+  width:300px; 
+  height:400px;
+  background-color: #F3FBE6;
+  padding: 32px;
+  margin-right: 350px;
+}
+.addBookForm h2{ 
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.bookEntry {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  max-width:300px;
+  background-color:white;
+}
+
+.addBookForm form {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 16px;
+  
+  margin-bottom: 16px;
+}
+
+.addBookForm input,
+.addBookForm select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  display:flex; 
+  flex-direction:column;
+  text-align:center;
+  align-items:center;
+  gap: 16px;
+    
+}
+
+.addBookForm select{
+    cursor: pointer;
+}
+
+.addBookForm button {
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}

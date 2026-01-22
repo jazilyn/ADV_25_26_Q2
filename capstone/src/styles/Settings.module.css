@@ -1,0 +1,49 @@
+
+.layout {
+  width:1750px;
+  height:500px;
+  display: flex;
+  font-family: 'Inria Serif', serif;
+  color: inherit;
+}
+.sidebar {
+  width: 220px;
+  padding: 16px;
+  border-right: 1px solid #ccc;
+  background-color:#F3FBE6;
+}
+.appearanceContainer {
+  flex: 1;
+  background-color:#E6ECFB;
+}
+.themePreviewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.themePreview {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+.previewImage {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.toggleButton {
+  width: 200px;
+  height: 55px;
+  background-color: white;
+  font-family: 'Inria Serif', serif;
+  font-size: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  display:flex; 
+  flex-direction: column;
+  text-align:center;
+  justify-content: center;
+  margin-top:100px;
+  margin-left:220px;
+}
